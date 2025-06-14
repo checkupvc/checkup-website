@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart EKG Logo</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .logo-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+        /* Specific styles for SVG elements */
+        .heart-shape {
+            border-radius: 9999px; /* Equivalent to Tailwind's rounded-full */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to Tailwind's shadow-lg */
+        }
+        .ekg-line {
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06)); /* Equivalent to Tailwind's drop-shadow-md */
+        }
+        /* Styles for text elements */
+        .title {
+            font-size: 1.5rem; /* Equivalent to Tailwind's text-2xl */
+            font-weight: 700; /* Equivalent to Tailwind's font-bold */
+            color: #4A5568; /* Equivalent to Tailwind's text-gray-800 */
+            margin-top: 1.5rem; /* Equivalent to Tailwind's mt-6 */
+        }
+        .description {
+            color: #718096; /* Equivalent to Tailwind's text-gray-600 */
+            text-align: center; /* Equivalent to Tailwind's text-center */
+            margin-top: 0.5rem; /* Equivalent to Tailwind's mt-2 */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 30 C130 0, 170 20, 170 60 C170 100, 100 140, 100 140 C100 140, 30 100, 30 60 C30 20, 70 0, 100 30 Z"
+                  fill="#FFCCCC" stroke="#FF9999" stroke-width="4"
+                  class="heart-shape"/>
+            <polyline points="20,85 40,85 50,80 60,90 70,85 80,85 90,80 95,70 100,100 105,70 110,80 120,75 130,75 140,70 150,80 160,75 180,60"
+                      stroke="#4ECDC4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                      fill="none" class="ekg-line"/>
+            <circle cx="95" cy="70" r="3" fill="#3D9B91" />
+            <circle cx="100" cy="100" r="3" fill="#3D9B91" />
+            <circle cx="105" cy="70" r="3" fill="#3D9B91" />
+        </svg>
+
+        <h2 class="title">Heartbeat VC</h2>
+        <p class="description">Keep current and potential investors up to date.</p>
+    </div>
+</body>
+</html>
